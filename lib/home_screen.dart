@@ -51,8 +51,11 @@ class _HomePageState extends State<HomePage> {
                                     snapshot.data!.todos![index].id.toString()),
                                 Text(snapshot.data!.todos![index].todo
                                     .toString()),
-                                Text(snapshot.data!.todos![index].completed
-                                    .toString()),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(snapshot.data!.todos![index].completed
+                                      .toString()),
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(snapshot.data!.todos![index].userId
